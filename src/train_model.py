@@ -1,0 +1,112 @@
+import pandas as pd
+import joblib
+import os
+
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+MAIN_DATA_PATH = os.path.join(BASE_DIR, "data", "scam_messages.csv")
+LOCAL_DATA_PATH = os.path.join(BASE_DIR, "data", "local_sri_lankan_scam_dataset.csv")
+
+MODEL_PATH = os.path.join(BASE_DIR, "models", "scam_detector_model.pkl")
+
+
+def load_and_merge_datasets():
+    datasets = []
+
+    if os.path.exists(MAIN_DATA_PATH):
+        main_df = pd.read_csv(MAIN_DATA_PATH)
+        datasets.append(main_df)
+        print(f"Loaded main dataset: {MAIN_DATA_PATH}")
+        print(f"Main dataset rows: {len(main_df)}")
+    else:
+        print(f"Main dataset not found: {MAIN_DATA_PATH}")
+
+    if os.path.exists(LOCAL_DATA_PATH):
+        local_df = pd.read_csv(LOCAL_DATA_PATH)
+        datasets.append(local_df)
+        print(f"Loaded local dataset: {LOCAL_DATA_PATH}")
+        print(f"Local dataset rows: {len(local_df)}")
+    else:
+        print(f"Local dataset not found: {LOCAL_DATA_PATH}")
+
+    if not datasets:
+        raise FileNotFoundError("No dataset files found in the data folder.")
+
+    df = pd.concat(datasets, ignore_index=True)
+
+    # Keep only required columns
+    required_columns = ["message", "label"]
+
+    for col in required_columns:
+        if col not in df.columns:
+            raise ValueError(f"Missing required column: {col}")
+
+    df = df.dropna(subset=["message", "label"])
+
+    df["message"] = df["message"].astype(str)
+    df["label"] = df["label"].astype(str).str.lower().str.strip()
+
+    # Keep only valid labels
+    valid_labels = ["safe", "suspicious", "scam"]
+    df = df[df["label"].isin(valid_labels)]
+
+    print("\nFinal merged dataset rows:", len(df))
+    print("\nLabel distribution:")
+    print(df["label"].value_counts())
+
+    return df
+
+
+def train_model():
+    df = load_and_merge_datasets()
+
+    X = df["message"]
+    y = df["label"]
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X,
+        y,
+        test_size=0.25,
+        random_state=42,
+        stratify=y
+    )
+
+    model = Pipeline([
+        ("tfidf", TfidfVectorizer(
+            lowercase=True,
+            ngram_range=(1, 2),
+            min_df=1
+        )),
+        ("classifier", LogisticRegression(
+            max_iter=1000,
+            class_weight="balanced"
+        ))
+    ])
+
+    model.fit(X_train, y_train)
+
+    y_pred = model.predict(X_test)
+
+    print("\nAccuracy:", accuracy_score(y_test, y_pred))
+
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred))
+
+    print("\nConfusion Matrix:")
+    print(confusion_matrix(y_test, y_pred))
+
+    os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+    joblib.dump(model, MODEL_PATH)
+
+    print(f"\nModel saved successfully to: {MODEL_PATH}")
+
+
+if __name__ == "__main__":
+    train_model()

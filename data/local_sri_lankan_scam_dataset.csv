@@ -1,0 +1,144 @@
+﻿message,label,scam_type,language,channel,source_type,red_flags
+මෙය නිල පිටුවයි. ඔබගේ login විස්තර තහවුරු කරන්න.,scam,impersonation scam,Sinhala,Facebook,curated_from_user_9_category_description,fake official page; asks login verification
+Your order has been delivered successfully.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Your package is held at customs. Pay Rs.250 release fee using this link: [URL],scam,parcel scam,English,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+"Hello, Good Afternoon. H.eIIo. Are-you-there?",suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Instant loan approved. Pay registration charge Rs.1000 before disbursement.,scam,loan scam,English,Facebook,curated_from_user_9_category_description,instant loan; advance fee
+We're hiring. 2600 - 5800 per day. Apply now. Work from home. High daily paid. Flexible time. Part time and full time. Non-experience. Reply YES or OK.,scam,job scam,English,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+Helloo 👋👋 Can I talk with you?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Hii. May I talk to you?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Assignment deadline එක සිකුරාදා දක්වා දීර්ඝ කරලා තියෙනවා.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Cash only direct bank transfer. No pickup. Delivery after full payment.,scam,online shopping fraud,English,Facebook,curated_from_user_9_category_description,advance payment; no verifiable seller
+The office will be closed tomorrow due to maintenance.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+Hii. How are you? H.eLLo,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+අද practical class එක cancel කරලා තියෙනවා.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+රැකියා ඇබෑර්තු ඇත. පැය 2ක් වැඩ කරලා දෛනික වැටුප Rs.6200. Apply now.,scam,job scam,Sinhala,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Please collect your certificate from the department office.,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Fixed 30% daily return. Send bank transfer slip to activate investment account.,scam,investment scam,English,Facebook,curated_from_user_9_category_description,unrealistic returns; bank transfer
+Mata gift parcel ekak ewanna thiyenawa. Customs fee gewanna puluwanda?,scam,romance scam,Singlish,Messenger,curated_from_user_9_category_description,gift parcel; customs fee
+Anyone can do this job using your mobile. Daily paid. Reply YES/OK.,scam,job scam,English,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Simple work offer. One to two hours per day. Daily salary Rs.3500 to Rs.6500. No company interview required. Reply OK for details.,scam,job scam,English,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+ඉක්මන් ණය ලබාදේ. මුලින් service fee එක mobile wallet එකට ගෙවන්න.,scam,loan scam,Sinhala,WhatsApp,curated_from_user_9_category_description,loan offer; mobile wallet fee
+"Crypto group ekata join wenna. Guaranteed high return, no risk.",scam,investment scam,Singlish,Telegram,curated_from_user_9_category_description,guaranteed return; no risk
+Never share your banking passwords or OTPs.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Mama bank officer kenek. Obage account eka verify karanna OTP eka ewanna.,scam,impersonation scam,Singlish,WhatsApp,curated_from_user_9_category_description,impersonates bank officer; requests OTP
+Obata simple online job ekak thiyenawa. Gedara idan 1-3 hours wada karala dawasata Rs.2500 - Rs.6000 ganna puluwan. Experience one na. YES kiyala reply karanna.,scam,job scam,Singlish,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Hl! Good Morning. Hello,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+LMS eke lecture notes upload karala thiyenawa.,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+"Hi, I changed my number. Please send Rs.5000 urgently to this account.",scam,impersonation scam,English,WhatsApp,curated_from_user_9_category_description,pretends known contact; urgent money request
+Package delivered. Thank you for shopping with us.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Your bank account will be suspended. Verify login details immediately at [URL].,scam,phishing scam,English,SMS,curated_from_user_9_category_description,account suspension; verify login; URL
+ඔබගේ පැමිණීම හෙට තහවුරු කරන්න.,safe,normal,Sinhala,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Your payment receipt has been generated successfully through the official app.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+Part-time social media task job. Earn 6000 per day. Deposit registration fee after approval.,scam,job scam,English,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+ඔබට Rs.50000 ත්‍යාගයක් ලැබී ඇත. NIC අංකය යවන්න.,scam,lottery scam,Sinhala,SMS,curated_from_user_9_category_description,prize; asks NIC
+Free in-game items available. Login with your parent account here: [URL],scam,gaming scam,English,Gaming/Social Media,curated_from_user_9_category_description,free items; credential capture
+Good Afternoon. Excuse me?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Heyy Good Afternoon. Hello. Excuse me?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Report eka evening walata kalin ewanna puluwanda?,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+He!!o. Are-you-there?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+ඔබගේ පාර්සලය ලබාදීමට නොහැක. ලිපිනය වැරදියි. විස්තර යාවත්කාලීන කරන්න [URL],scam,parcel scam,Sinhala,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Foreign assistance fund for elderly people. Send bank details and NIC.,scam,elderly targeting scam,English,WhatsApp,curated_from_user_9_category_description,foreign assistance; asks bank details/NIC
+Hello Good afternoon. Are you here?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Work from home job available. No experience required. Daily income Rs.5000. Send your age and WhatsApp number now.,scam,job scam,English,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Tomorrow group discussion is at 3 PM.,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Online velai. Daily salary Rs.3000 - Rs.6000. Experience venam. YES reply pannunga.,scam,job scam,Tamil-English,WhatsApp,curated_local_tamil_variant,online job; high daily salary; reply YES
+Claim your refund by re-activating your account here: [URL],scam,phishing scam,English,Email,curated_from_user_9_category_description,claim refund; reactivate; URL
+The workshop registration confirmation has been sent to your email.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+Do not share your OTP with anyone.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Courier notice: address invalid. Click [URL] to reschedule delivery.,scam,parcel scam,English,Email,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Please check the official university notice board for exam updates.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+"2/2 delivery attempts have been made, please confirm your delivery details or your item will be returned: [URL]",scam,parcel scam,English,SMS,public_awareness_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Hello. Nice to meet you. Are you there?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+අද class එක Zoom එකෙන් පැවැත්වේ.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+New online friend refuses video calls and asks for parcel release payment.,scam,romance scam,English,Social Media,curated_from_user_9_category_description,refuses video calls; asks money
+Elderly assistance payment approved. Pay processing fee first.,scam,elderly targeting scam,English,SMS,curated_from_user_9_category_description,assistance payment; processing fee
+Your appointment is confirmed for Monday.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Obage bank account eka block wela. OTP eka mekata reply karanna.,scam,OTP scam,Singlish,SMS,curated_from_user_9_category_description,bank blocked; asks OTP
+I sent you a gift parcel but customs needs a release fee. Please send money today.,scam,romance scam,English,Messenger,curated_from_user_9_category_description,gift parcel; customs fee; money request
+ඔබගේ parcel එක customs එකේ නවතා ඇත. ගාස්තුව ගෙවන්න [URL],scam,parcel scam,Sinhala,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Neenga prize win pannirukeenga. NIC number send pannunga.,scam,lottery scam,Tamil-English,WhatsApp,curated_local_tamil_variant,prize; asks ID
+Congratulations! You won Rs.500000. Pay tax fee first to receive the prize.,scam,lottery scam,English,WhatsApp,curated_from_user_9_category_description,won prize; tax fee
+Original item below market price. Pay full amount now to reserve.,scam,online shopping fraud,English,Instagram,curated_from_user_9_category_description,below market price; advance payment
+உங்கள் பார்சல் முகவரி தவறாக உள்ளது. விவரங்களை புதுப்பிக்க [URL].,scam,parcel scam,Tamil,SMS,curated_local_tamil_variant,parcel issue; URL
+Meeting link eka group eke dala thiyenawa.,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+අද lecture එක 2ට online තියෙනවා.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Easy money loan. No documents. Pay processing fee first.,scam,loan scam,English,SMS,curated_from_user_9_category_description,no documents; processing fee first
+"Hello, we have a simple work offer for you. Work from home 1hour - 2hour. Daily payment 2500 - 5500. No experience required. You can do this from as a second career. Reply YES/OK for more details.",scam,job scam,English,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+අද meeting එකට time එකට එන්න.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+You are today's lucky winner. Click [URL] to claim your reward.,scam,lottery scam,English,SMS,curated_from_user_9_category_description,lucky winner; claim link
+H.eLLo. Can I talk with you?,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Can you send the assignment file before 6 PM?,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Oyata Rs.100000 dinumak labuna. Claim karanna NIC eka ewanna.,scam,lottery scam,Singlish,WhatsApp,curated_from_user_9_category_description,prize; asks NIC
+Please verify information only through the official website.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+Delivery failed. Confirm your address and payment details now: [URL],scam,parcel scam,English,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Official notice: system maintenance from 10 PM to 12 AM.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+Guaranteed crypto investment. High return with no risk. Join our Telegram group.,scam,investment scam,English,Telegram,curated_from_user_9_category_description,guaranteed return; no risk; crypto
+We are unable to ship your order because the address you entered is invalid. Please update your details: [URL],scam,parcel scam,English,SMS,public_awareness_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+AI trading platform. Invest Rs.5000 today and earn daily profit.,scam,investment scam,English,WhatsApp,curated_from_user_9_category_description,AI trading; daily profit
+Gaming top-up free. Enter parent's card details to claim.,scam,gaming scam,English,Social Media,curated_from_user_9_category_description,free top-up; card details
+Tomorrow class will start at 9 AM.,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Parcel eka customs eke nawathila. Release karanna Rs.250 gewanna [URL],scam,parcel scam,Singlish,WhatsApp,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+We have a simple job for you. Daily salary Rs.2000 - 6200. Can do at home. Anyone can do. Apply now. Reply YES.,scam,job scam,English-Sinhala,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+Hello,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Hello !!,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+The exam timetable is available on the official website.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
+මට සේවකයින් 200ක් අවශ්‍යයි. රැකියාව පැය 1 සිට 2 දක්වා. දෛනික වැටුප 3800RS සිට 6400RS දක්වා. ඔයාගේ වයස?,scam,job scam,Sinhala,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+உங்கள் வங்கி கணக்கு முடக்கப்பட்டுள்ளது. OTP அனுப்பவும்.,scam,OTP scam,Tamil,SMS,curated_local_tamil_variant,bank blocked; asks OTP
+"I love you and want to visit, but I need emergency money for travel documents.",scam,romance scam,English,WhatsApp,curated_from_user_9_category_description,emotional pressure; emergency money
+Your item will be returned today unless you update delivery details: [URL],scam,parcel scam,English,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+මම හවස report එක එවන්නම්.,safe,normal,Sinhala,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Online part time job ekak thiyenawa. Mobile eken karanna puluwan. Daily payment Rs.3000 - Rs.6000. More details walata OK kiyala reply karanna.,scam,job scam,Singlish,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Please bring your student ID for registration.,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Heta lecture eka 10ta thiyenawa.,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+நாளை வகுப்பு காலை 10 மணிக்கு நடைபெறும்.,safe,normal,Tamil,WhatsApp,curated_local_tamil_variant,normal communication
+Your card details must be updated to avoid suspension: [URL],scam,phishing scam,English,SMS,curated_from_user_9_category_description,card details; avoid suspension; URL
+We're hiring. We have a simple job to offer you. Do it online from home or anywhere. Daily salary 2200 - 6200. Flexible time 1-3 hours/day. Fully support. No need experience. Reply YES or OK for more details.,scam,job scam,English,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+Payment completed successfully. Receipt number [ID].,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Your Parcel Cannot be delivered due to an incorrect address. Please update your information: [URL],scam,parcel scam,English,SMS,public_awareness_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Your bank statement is available in the official banking app.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Your parcel was delivered to the registered address.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+ඔබගේ library book return date එක සඳුදා.,safe,normal,Sinhala,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
+Group project discussion eka 7ta start wenawa.,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Hello..,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+"Hello, may I ask if you are [NAME]?",suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
+Tomorrow group discussion 3 PM ku irukku.,safe,normal,Tamil-English,WhatsApp,curated_local_tamil_variant,normal communication
+This is the official bank support page. Your account has an issue. Message us your OTP to fix it.,scam,impersonation scam,English,Social Media,curated_from_user_9_category_description,claims official institution; requests OTP
+Package release pending. Small customs charge required. Pay now: [URL],scam,parcel scam,English,WhatsApp,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+Marketplace seller asks full advance payment to personal account and refuses COD.,scam,online shopping fraud,English,Social Media,curated_from_user_9_category_description,advance payment; personal account
+Brand new phone for half price. Full payment by personal bank transfer only.,scam,online shopping fraud,English,Facebook Marketplace,curated_from_user_9_category_description,unrealistic price; personal bank transfer
+No-repayment loan available today. Service fee eka kalin gewanna.,scam,loan scam,Singlish,WhatsApp,curated_from_user_9_category_description,too-good loan offer; advance fee
+"We have a simple job for you. Free time job, work at home 1-3h. Daily salary 4200 - 6200. Fully support. No need experience. Anyone can do with your mobile. Reply YES/OK for more details.",scam,job scam,English,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
+Lecture recording eka LMS eke thiyenawa.,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+Online task group ekata join wela dawasata 5000 ganna. Age eka kiyanna.,scam,job scam,Singlish,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Assignment submission date Friday வரை extend பண்ணப்பட்டுள்ளது.,safe,normal,Tamil-English,WhatsApp,curated_local_tamil_variant,normal academic message
+ඔබගේ බැංකු ගිණුම අවහිර කර ඇත. OTP එක දැන් යවන්න.,scam,OTP scam,Sinhala,SMS,curated_from_user_9_category_description,bank blocked; asks OTP
+Oba heta campus ekata enawada?,safe,normal,Singlish,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
+ගෙදර ඉඳන් online job කරන්න පුළුවන්. දවසට Rs.4000ක්. වැඩි විස්තර සඳහා YES කියන්න.,scam,job scam,Sinhala,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+Obage parcel eka deliver karanna ba. Address eka waradi. Details update karanna [URL],scam,parcel scam,Singlish,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
+අපි සේවකයින් බඳවා ගන්නවා. ගෙදර සිට පැය 1-3ක් වැඩ කරලා දෛනිකව Rs.2000 - Rs.6200 ගන්න පුළුවන්. Experience අවශ්‍ය නැහැ. YES කියලා reply කරන්න.,scam,job scam,Sinhala,WhatsApp/Telegram,curated_variant_from_user_pattern,work from home; unrealistic daily salary; reply YES/OK; low skill/no experience
+"Dear Sir, you have been approved an income tax refund of Rs.15490. Please verify your account number and update your bank account information by visiting [URL].",scam,phishing scam,English,SMS,public_awareness_pattern,tax refund offer; asks account verification; asks bank account information; link
+You have been approved for an income tax refund. Update your bank account information using this link [URL].,scam,phishing scam,English,SMS,curated_local,refund claim; bank account update; suspicious link
+Obata income tax refund ekak approve wela. Bank account details verify karanna [URL] link ekata yanna.,scam,phishing scam,Singlish,SMS,curated_local,refund claim; bank details request; link
+Your parcel cannot be delivered due to an incorrect address. Please update your information: [URL],scam,parcel scam,English,SMS,public_awareness_pattern,parcel delivery issue; incorrect address; asks to update information; link
+2/2 delivery attempts have been made. Please confirm your delivery details or your item will be returned: [URL],scam,parcel scam,English,SMS,public_awareness_pattern,delivery attempts; confirm delivery details; item returned threat; link
+[Sri Lanka Police Department] Traffic Fine Overdue Notice. Traffic Ticket Number: [ID]. Current Status: Final Payment Reminder Stage.,scam,impersonation scam,English,SMS,public_awareness_pattern,impersonates police department; overdue fine; final payment reminder; pressure
+Sri Lanka Police traffic fine overdue. Pay immediately to avoid further action: [URL],scam,phishing scam,English,SMS,curated_local,government impersonation; urgent payment; threat; link
+Traffic ticket payment reminder. Final notice. Pay the overdue fine now through this link [URL].,scam,phishing scam,English,SMS,curated_local,final notice; overdue fine; payment link; urgency
+You won 1 million. Pay an admin fee to claim your prize.,scam,lottery scam,English,Social Media,public_awareness_pattern,large prize; admin fee; claim prize
+I really love you. Send some money to help me.,scam,romance scam,English,Social Media,public_awareness_pattern,emotional manipulation; asks money; online relationship
+You have a package. Pay a clearance fee before delivery.,scam,parcel scam,English,SMS,public_awareness_pattern,package claim; clearance fee; pay before delivery
+You won a car. Pay customs fee for the car to be delivered.,scam,lottery scam,English,WhatsApp,public_awareness_pattern,prize car; customs fee; delivery fee
+A well-paid job is available. Pay a registration fee to apply.,scam,job scam,English,Social Media,public_awareness_pattern,well-paid job; registration fee; pay to apply
+ඔබට මිලියනයක ත්‍යාගයක් ලැබී ඇත. ත්‍යාගය ලබා ගැනීමට admin fee ගෙවන්න.,scam,lottery scam,Sinhala,WhatsApp,curated_local,prize claim; admin fee; upfront payment
+හොඳ වැටුපක් ඇති රැකියාවක් තිබේ. ලියාපදිංචි ගාස්තුව ගෙවන්න.,scam,job scam,Sinhala,Social Media,curated_local,job offer; registration fee; upfront payment
+Scammers may impersonate NDB Bank using WhatsApp or other channels to gain your trust.,scam,impersonation scam,English,WhatsApp,public_awareness_pattern,bank impersonation; WhatsApp contact; trust building
+"This is from bank customer support. Send your OTP, PIN, password and account details for verification.",scam,OTP scam,English,WhatsApp,curated_local,asks OTP; asks PIN; asks password; asks account details
+Install this banking app to secure your account and continue using online banking: [URL],scam,phishing scam,English,WhatsApp,public_awareness_pattern,fake app installation; banking security claim; link
+Urgent request: provide your login details and personal information to authenticate your bank account.,scam,phishing scam,English,Email,public_awareness_pattern,urgent request; login details; personal information; bank account
+Your bank website has changed to www.ndbbanks.com. Login now to continue.,scam,phishing scam,English,SMS,public_awareness_pattern,lookalike domain; bank login; urgent action
+Bank officer here. Share your screen so we can fix your online banking issue.,scam,impersonation scam,English,WhatsApp,curated_local,bank officer impersonation; screen sharing request; account access risk
+"Bank eken kiyala OTP, PIN, password saha account details illanawa. Ewa denna epa.",scam,OTP scam,Singlish,WhatsApp,curated_local,bank impersonation; asks OTP; asks PIN; asks password
+Lost suitcases from airport customers in Sri Lanka for only $1. Click the button and go to the website to order.,scam,online shopping fraud,English,Social Media,public_awareness_pattern,unrealistic price; airport impersonation; click button; website order
+Airport lost luggage sale. Buy suitcases with electronics for just $1. Only online order available.,scam,online shopping fraud,English,Social Media,curated_local,lost luggage sale; too cheap; only online; likely fake page
+Bandaranaike Airport lost baggage sale. Pay $1 now and claim suitcase through this website [URL].,scam,online shopping fraud,English,Social Media,curated_local,airport impersonation; fake sale; payment request; link

@@ -1,0 +1,16 @@
+message,label,scam_type
+"Your bank account has been blocked. Click this link immediately to verify your details",scam,banking scam
+"Congratulations! You have won Rs. 500000. Send your NIC number to claim the prize",scam,lottery scam
+"Your parcel delivery failed. Pay Rs. 250 using this link to reschedule",scam,parcel scam
+"Urgent job offer available. Pay registration fee first to confirm your position",scam,job scam
+"Your OTP is required to reactivate your account. Reply with the code now",scam,otp scam
+"Hi, the meeting is scheduled for tomorrow at 10 AM",safe,normal
+"Your assignment deadline has been extended until Friday",safe,normal
+"Please check the official university notice board for exam updates",safe,normal
+"Can you send me the report before evening?",safe,normal
+"Your payment receipt has been generated successfully",safe,normal
+"Dear customer, your online banking access will expire today. Login using this link",scam,banking scam
+"You have been selected for a foreign job opportunity. Processing fee required",scam,job scam
+"Your package is held at customs. Click here to release it",scam,parcel scam
+"You won a free iPhone. Enter your card details to receive it",scam,lottery scam
+"Do not share your OTP with anyone",safe,normal
