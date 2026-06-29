@@ -38,6 +38,18 @@ body {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-logo {
+  width: 36px;
+  height: 29px;
+  display: block;
+}
+
+.brand-name {
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.02em;

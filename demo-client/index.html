@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ScamShield</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
     <div class="topbar">
-      <span class="brand">ScamShield</span>
+      <div class="brand">
+        <img src="assets/logo.svg" alt="ScamShield" class="brand-logo" />
+        <span class="brand-name">ScamShield</span>
+      </div>
       <label class="switch" title="Training mode">
         <input type="checkbox" id="trainingModeToggle" checked />
         <span class="slider"></span>
@@ -97,6 +102,7 @@
     </main>
   </div>
 
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

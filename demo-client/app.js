@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = window.SCAMSHIELD_API_URL || "http://localhost:8000";
 const FEEDBACK_INTERVAL = 5;
 
 const sendForm = document.getElementById("sendForm");

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: scamshield-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://your-username.github.io,http://localhost:5500

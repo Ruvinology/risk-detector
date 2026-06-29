@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+*.log
+
+# Keep trained models and data for deployment
+!models/*.pkl
+!data/*.csv

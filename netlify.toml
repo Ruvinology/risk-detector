@@ -1,0 +1,8 @@
+[build]
+  publish = "demo-client"
+  command = "echo 'Static demo client'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

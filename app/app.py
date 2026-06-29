@@ -28,7 +28,7 @@ def _delivery_action(result):
 
 st.set_page_config(
     page_title="ScamShield AI",
-    page_icon="🛡️",
+    page_icon="app/assets/logo.svg",
     layout="centered",
 )
 
