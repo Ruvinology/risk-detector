@@ -6,3 +6,4 @@ timestamp,message,predicted_action,predicted_verdict,user_rating,correct_label,s
 2026-06-29T06:33:01.478397+00:00,https://excalidraw.com/,allow,Likely Safe,correct,,demo-client
 2026-06-29T06:35:54.220890+00:00,"Hello harshadefernando@gmail.com,  We permanently deleted your Heroku account due to outstanding invoices.  Thank you, The Heroku Billing Team",allow,Likely Safe,correct,,demo-client
 2026-06-29T06:38:48.464700+00:00,"We are hiring! Work from home, Rs. 5000/day. No experience. Reply YES now.",block,Scam / High Suspicion,correct,,demo-client
+2026-06-29T09:06:35.007050+00:00,Www.mov,allow,Likely Safe,wrong,suspicious,demo-client

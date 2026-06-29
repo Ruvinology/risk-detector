@@ -30,13 +30,18 @@ DEFAULT_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://scamshieldclient.vercel.app",
+    "https://scamshieldclient.netlify.app",
 ]
 
 def _cors_origins():
+    origins = list(DEFAULT_ORIGINS)
     extra = os.getenv("ALLOWED_ORIGINS", "")
-    if not extra.strip():
-        return DEFAULT_ORIGINS
-    return [origin.strip() for origin in extra.split(",") if origin.strip()]
+    for origin in extra.split(","):
+        origin = origin.strip()
+        if origin and origin not in origins:
+            origins.append(origin)
+    return origins
 
 app = FastAPI(
     title="ScamShield AI API",
@@ -53,6 +58,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_cors_origins(),
+    allow_origin_regex=r"https://.*\.(vercel\.app|netlify\.app|github\.io)$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

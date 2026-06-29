@@ -8,8 +8,6 @@ if ROOT_DIR not in sys.path:
 
 from src.service import analyze_message
 
-FEEDBACK_INTERVAL = 5
-
 if "message_count" not in st.session_state:
     st.session_state.message_count = 0
 
@@ -36,19 +34,11 @@ st.sidebar.header("Settings")
 training_mode = st.sidebar.toggle(
     "Training mode",
     value=True,
-    help="When on, asks for feedback every 5 analyzed messages.",
+    help="When on, lets you report incorrect scans for model retraining.",
 )
 
 if training_mode:
-    remaining = FEEDBACK_INTERVAL - (
-        st.session_state.message_count % FEEDBACK_INTERVAL or FEEDBACK_INTERVAL
-    )
-    if st.session_state.message_count == 0:
-        st.sidebar.caption(f"Feedback check-in every {FEEDBACK_INTERVAL} messages.")
-    elif remaining == FEEDBACK_INTERVAL:
-        st.sidebar.caption("Next message triggers a training check-in.")
-    else:
-        st.sidebar.caption(f"Next check-in in {remaining} message(s).")
+    st.sidebar.caption("Use “Report incorrect result” after any analysis.")
 else:
     st.sidebar.caption("Training prompts disabled.")
 
@@ -145,80 +135,18 @@ if st.button("Analyze Message"):
                 st.write(f"- {item}")
 
             st.session_state.message_count += 1
-            show_scheduled_feedback = (
-                training_mode
-                and st.session_state.message_count % FEEDBACK_INTERVAL == 0
-            )
 
-            if show_scheduled_feedback:
-                st.markdown("---")
-                st.subheader("Training check-in")
-                st.caption(
-                    f"Message {st.session_state.message_count} — "
-                    "help improve the model with quick feedback."
-                )
-
-                fb_col1, fb_col2 = st.columns(2)
-
-                with fb_col1:
-                    if st.button(
-                        "Correct prediction",
-                        icon=":material/thumb_up:",
-                        key=f"fb_ok_{st.session_state.message_count}",
-                    ):
-                        from src.feedback import save_feedback
-
-                        save_feedback(
-                            message=message,
-                            predicted_action=action,
-                            predicted_verdict=result["verdict"],
-                            user_rating="correct",
-                            source="streamlit",
-                        )
-                        st.success("Thanks! Feedback saved for future training.")
-
-                with fb_col2:
-                    wrong_label = st.selectbox(
-                        "If incorrect, correct label:",
-                        ["", "safe", "suspicious", "scam"],
-                        key=f"fb_label_{st.session_state.message_count}",
-                    )
-                    if st.button(
-                        "Incorrect prediction",
-                        icon=":material/thumb_down:",
-                        key=f"fb_bad_{st.session_state.message_count}",
-                    ):
-                        if not wrong_label:
-                            st.warning("Select the correct label first.")
-                        else:
-                            from src.feedback import save_feedback
-
-                            save_feedback(
-                                message=message,
-                                predicted_action=action,
-                                predicted_verdict=result["verdict"],
-                                user_rating="wrong",
-                                correct_label=wrong_label,
-                                source="streamlit",
-                            )
-                            st.success(
-                                "Correction saved. Run: python scripts/merge_feedback.py "
-                                "then python src/train_model.py"
-                            )
-            elif training_mode:
-                st.caption(
-                    "Optional: expand below if this result was wrong before the next check-in."
-                )
+            if training_mode:
                 with st.expander("Report incorrect result"):
                     wrong_label = st.selectbox(
                         "Correct label:",
                         ["", "safe", "suspicious", "scam"],
-                        key=f"fb_optional_{st.session_state.message_count}",
+                        key=f"fb_{st.session_state.message_count}",
                     )
                     if st.button(
                         "Submit correction",
                         icon=":material/flag:",
-                        key=f"fb_flag_{st.session_state.message_count}",
+                        key=f"fb_submit_{st.session_state.message_count}",
                     ):
                         if not wrong_label:
                             st.warning("Select the correct label first.")
@@ -233,7 +161,7 @@ if st.button("Analyze Message"):
                                 correct_label=wrong_label,
                                 source="streamlit",
                             )
-                            st.success("Correction saved.")
+                            st.success("Correction saved for retraining.")
 
 st.markdown("---")
 

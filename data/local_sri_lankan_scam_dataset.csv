@@ -1,4 +1,4 @@
-﻿message,label,scam_type,language,channel,source_type,red_flags
+message,label,scam_type,language,channel,source_type,red_flags
 මෙය නිල පිටුවයි. ඔබගේ login විස්තර තහවුරු කරන්න.,scam,impersonation scam,Sinhala,Facebook,curated_from_user_9_category_description,fake official page; asks login verification
 Your order has been delivered successfully.,safe,normal,English,SMS,curated_safe_contrast,normal communication; no payment request; no credential request
 Your package is held at customs. Pay Rs.250 release fee using this link: [URL],scam,parcel scam,English,SMS,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
@@ -187,3 +187,9 @@ Bandaranaike Airport lost baggage sale. Pay $1 now and claim suitcase through th
 "You won a prize! Send Rs.100 processing fee to claim",scam,lottery scam,English,SMS,curated_scam_variant,prize scam with advance fee
 "Simple online job. Earn Rs.8000 daily. WhatsApp this number now.",scam,job scam,English,WhatsApp,curated_scam_variant,job scam with unrealistic earnings
 "Your Dialog bill is overdue. Pay immediately: https://dialog-bill-pay.top",scam,phishing scam,Singlish,SMS,curated_scam_variant,fake telecom bill phishing link
+"wWw.mov",scam,other,Mixed,WhatsApp,user_feedback,User correction from feedback UI
+"Www.mov",suspicious,cold contact scam,Mixed,WhatsApp,user_feedback,User correction from feedback UI
+"•	Hey, check out this cool investment opportunity: http://quickprofits.io",suspicious,cold contact scam,Mixed,WhatsApp,user_feedback,User correction from feedback UI
+"•	Click this link to view the photos from yesterday's event: http://shared-photos-download.net",suspicious,cold contact scam,Mixed,WhatsApp,user_feedback,User correction from feedback UI
+"•	Machan me investment plan eka balapan. 1 month walin double profit: http://quickcash.io",suspicious,cold contact scam,Mixed,WhatsApp,user_feedback,User correction from feedback UI
+"•	புதிய வேலை வாய்ப்பு! வீட்டிலிருந்தே மாதம் ரூ.300,000 சம்பாதிக்கலாம்: http://easyjob.pro",suspicious,cold contact scam,Mixed,WhatsApp,user_feedback,User correction from feedback UI

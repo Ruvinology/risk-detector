@@ -13,8 +13,9 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
+from src.feedback_merge import LOCAL_DATA_PATH, merge_corrections
+
 FEEDBACK_PATH = os.path.join(BASE_DIR, "data", "user_feedback.csv")
-LOCAL_DATA_PATH = os.path.join(BASE_DIR, "data", "local_sri_lankan_scam_dataset.csv")
 
 
 def merge_feedback():
@@ -37,27 +38,7 @@ def merge_feedback():
         print("No correction feedback to merge (only 'wrong' rows with a label count).")
         return 0
 
-    existing = set()
-    if os.path.exists(LOCAL_DATA_PATH):
-        with open(LOCAL_DATA_PATH, encoding="utf-8") as handle:
-            reader = csv.DictReader(handle)
-            for row in reader:
-                existing.add(row["message"].strip())
-
-    added = 0
-    with open(LOCAL_DATA_PATH, "a", encoding="utf-8", newline="") as handle:
-        for message, label in corrections:
-            if message in existing:
-                continue
-            scam_type = "normal" if label == "safe" else f"{label} feedback"
-            line = (
-                f'"{message.replace(chr(34), chr(39))}",{label},{scam_type},'
-                f"Mixed,WhatsApp,user_feedback,User correction from feedback UI\n"
-            )
-            handle.write(line)
-            existing.add(message)
-            added += 1
-
+    added = merge_corrections(corrections)
     print(f"Merged {added} new correction(s) into {LOCAL_DATA_PATH}")
     return added
 

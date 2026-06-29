@@ -1,8 +1,6 @@
-[build]
-  publish = "demo-client"
-  command = "echo 'Static demo client'"
-
+# Redirect old Netlify URL to Vercel (minimal bandwidth usage).
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://scamshieldclient.vercel.app/"
+  status = 302
+  force = true

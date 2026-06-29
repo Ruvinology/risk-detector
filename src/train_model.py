@@ -27,7 +27,7 @@ def load_and_merge_datasets():
         print(f"Main dataset rows: {len(main_df)}")
 
     if os.path.exists(LOCAL_DATA_PATH):
-        local_df = pd.read_csv(LOCAL_DATA_PATH)
+        local_df = pd.read_csv(LOCAL_DATA_PATH, encoding="utf-8-sig")
         datasets.append(local_df)
         print(f"Loaded local dataset: {LOCAL_DATA_PATH}")
         print(f"Local dataset rows: {len(local_df)}")
