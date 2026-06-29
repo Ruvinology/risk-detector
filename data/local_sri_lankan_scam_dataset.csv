@@ -80,7 +80,6 @@ Gaming top-up free. Enter parent's card details to claim.,scam,gaming scam,Engli
 Tomorrow class will start at 9 AM.,safe,normal,English,WhatsApp,curated_safe_contrast,normal communication; no payment request; no credential request
 Parcel eka customs eke nawathila. Release karanna Rs.250 gewanna [URL],scam,parcel scam,Singlish,WhatsApp,curated_variant_from_user_pattern,parcel/delivery issue; asks to update details; URL included; payment/release pressure
 We have a simple job for you. Daily salary Rs.2000 - 6200. Can do at home. Anyone can do. Apply now. Reply YES.,scam,job scam,English-Sinhala,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
-Hello,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
 Hello !!,suspicious,cold contact scam,English,WhatsApp/Telegram,anonymized_real_pattern,unknown account greeting; repeated greeting; possible scam opening
 The exam timetable is available on the official website.,safe,normal,English,Email,curated_safe_contrast,normal communication; no payment request; no credential request
 මට සේවකයින් 200ක් අවශ්‍යයි. රැකියාව පැය 1 සිට 2 දක්වා. දෛනික වැටුප 3800RS සිට 6400RS දක්වා. ඔයාගේ වයස?,scam,job scam,Sinhala,WhatsApp/Telegram,anonymized_real_pattern,work from home/simple job; high daily salary; low effort hours; no experience; reply YES/OK or asks age
@@ -142,3 +141,49 @@ Bank officer here. Share your screen so we can fix your online banking issue.,sc
 Lost suitcases from airport customers in Sri Lanka for only $1. Click the button and go to the website to order.,scam,online shopping fraud,English,Social Media,public_awareness_pattern,unrealistic price; airport impersonation; click button; website order
 Airport lost luggage sale. Buy suitcases with electronics for just $1. Only online order available.,scam,online shopping fraud,English,Social Media,curated_local,lost luggage sale; too cheap; only online; likely fake page
 Bandaranaike Airport lost baggage sale. Pay $1 now and claim suitcase through this website [URL].,scam,online shopping fraud,English,Social Media,curated_local,airport impersonation; fake sale; payment request; link
+"Check my project on GitHub: https://github.com/user/repo",safe,normal,English,WhatsApp,curated_safe_links,legitimate link share; no payment request; no credential request
+"Slides are here: https://docs.google.com/presentation/d/abc123/edit",safe,normal,English,Email,curated_safe_links,legitimate document link; no urgency; no payment request
+"Join the meeting: https://meet.google.com/abc-defg-hij",safe,normal,English,WhatsApp,curated_safe_links,legitimate meeting link; no payment request
+"Assignment repo: https://github.com/classroom/week3-lab",safe,normal,English,WhatsApp,curated_safe_links,legitimate academic link share
+"Please review the pull request: https://github.com/org/app/pull/42",safe,normal,English,Email,curated_safe_links,legitimate developer link; no scam indicators
+"Recording uploaded here: https://youtube.com/watch?v=abc123",safe,normal,English,WhatsApp,curated_safe_links,legitimate media link share
+"Shared notes: https://notion.so/team/project-doc-abc123",safe,normal,English,WhatsApp,curated_safe_links,legitimate productivity link share
+"Mata github eken code eka balanna: https://github.com/dev/sample-app",safe,normal,Singlish,WhatsApp,curated_safe_links,legitimate link share in Singlish
+"hi machn kohomada life eka",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual friend greeting; no payment request; no credential request
+"kohomada life eka",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual friend message; no scam indicators
+"hi machan, meeting eka 3ta ne?",safe,normal,Singlish,WhatsApp,curated_safe_greeting,normal plan message with casual greeting
+"Machan heta enawada campus ekata?",safe,normal,Singlish,WhatsApp,curated_safe_greeting,normal friend message without scam pressure
+"hi",safe,normal,English,WhatsApp,curated_safe_greeting,short casual greeting only
+"hello",safe,normal,English,WhatsApp,curated_safe_greeting,short casual greeting only
+"Hello",safe,normal,English,WhatsApp,curated_safe_greeting,capitalized casual greeting from known contact
+"https://account-review-center.example",scam,phishing scam,English,SMS,curated_phishing_url,fake account review domain; suspicious TLD; credential harvesting pattern
+"https://paypal-security.example/login",scam,phishing scam,English,SMS,curated_phishing_url,paypal brand impersonation; login path; not official domain
+"Verify your account now: https://secure-login-verify.xyz/account",scam,phishing scam,English,SMS,curated_phishing_url,verify pressure with suspicious login domain
+"Click to claim refund: https://bank-refund-portal.top/confirm",scam,phishing scam,English,SMS,curated_phishing_url,refund lure with suspicious domain extension
+"Your parcel is held. Pay here: https://customs-release-fee.click/track",scam,parcel scam,English,SMS,curated_phishing_url,parcel scam URL with suspicious TLD
+"khomada",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual check-in word only
+"call this 0770539346",safe,normal,Singlish,WhatsApp,curated_safe_contact,sharing a known contact number between friends
+"hey bn this is harsha's number call this",safe,normal,Singlish,WhatsApp,curated_safe_contact,casual friend message sharing a phone number
+"hey bn this is harsha's number call this 0770539346",safe,normal,Singlish,WhatsApp,curated_safe_contact,casual friend message sharing a phone number
+"this is my number 0770539346 call me",safe,normal,Singlish,WhatsApp,curated_safe_contact,normal request to call a shared number
+"machan mata call karanna 0712345678",safe,normal,Singlish,WhatsApp,curated_safe_contact,normal Sinhala-English message sharing a contact number
+"bn kohomada",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual friend check-in
+"machan kohomada",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual friend check-in
+"oyata kohomada",safe,normal,Singlish,WhatsApp,curated_safe_greeting,casual friend check-in in Sinhala-English
+"eta pass wela da?",safe,normal,Singlish,WhatsApp,curated_safe_greeting,normal question about exam results
+"mata photo eka ewanna",safe,normal,Singlish,WhatsApp,curated_safe_chat,normal request to send a photo
+"meeting eka 3ta ne?",safe,normal,Singlish,WhatsApp,curated_safe_chat,normal meeting time question
+"thanks machan",safe,normal,Singlish,WhatsApp,curated_safe_greeting,gratitude between friends
+"ok bn",safe,normal,Singlish,WhatsApp,curated_safe_greeting,short acknowledgement
+"see you tomorrow",safe,normal,English,WhatsApp,curated_safe_chat,normal farewell
+"Can you send me the notes?",safe,normal,English,WhatsApp,curated_safe_chat,normal academic request
+"Pick me up at 5",safe,normal,English,WhatsApp,curated_safe_chat,normal personal message
+"Happy birthday!",safe,normal,English,WhatsApp,curated_safe_greeting,birthday greeting
+"0712345678",safe,normal,Singlish,SMS,curated_safe_contact,phone number only from known context
+"0771234567",safe,normal,Singlish,SMS,curated_safe_contact,mobile number shared between contacts
+"Send Rs.500 to this account urgently from unknown number",scam,impersonation scam,Singlish,WhatsApp,curated_scam_variant,urgent money request from unknown sender
+"Share your OTP to verify this payment",scam,otp scam,English,SMS,curated_scam_variant,requests OTP sharing
+"Click here to update your bank details: https://sampath-verify.xyz/login",scam,banking scam,Singlish,SMS,curated_scam_variant,fake bank domain with login path
+"You won a prize! Send Rs.100 processing fee to claim",scam,lottery scam,English,SMS,curated_scam_variant,prize scam with advance fee
+"Simple online job. Earn Rs.8000 daily. WhatsApp this number now.",scam,job scam,English,WhatsApp,curated_scam_variant,job scam with unrealistic earnings
+"Your Dialog bill is overdue. Pay immediately: https://dialog-bill-pay.top",scam,phishing scam,Singlish,SMS,curated_scam_variant,fake telecom bill phishing link

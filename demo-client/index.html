@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScamShield</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <span class="brand">ScamShield</span>
+      <label class="switch" title="Training mode">
+        <input type="checkbox" id="trainingModeToggle" checked />
+        <span class="slider"></span>
+        <span class="switch-label">Training</span>
+      </label>
+    </div>
+
+    <main class="phones-row">
+      <div class="iphone">
+        <div class="iphone-frame">
+          <div class="dynamic-island"></div>
+          <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+              <svg viewBox="0 0 18 12" class="status-icon"><path d="M1 9h2v3H1zm4-3h2v6H5zm4-3h2v9H9zm4-4h2v13h-2z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 16 12" class="status-icon"><path d="M8 2C5.2 2 2.7 3.1 1 5l1.4 1C3.8 4.6 5.8 3.7 8 3.7s4.2.9 5.6 2.3L15 5C13.3 3.1 10.8 2 8 2zm0 4c-1.5 0-2.8.6-3.8 1.6L5.6 9c.7-.7 1.7-1.1 2.4-1.1s1.7.4 2.4 1.1l1.4-1.4C10.8 6.6 9.5 6 8 6zm0 3.5c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 28 13" class="status-icon battery"><rect x="1" y="1" width="22" height="11" rx="3" stroke="currentColor" fill="none" stroke-width="1.2"/><rect x="3" y="3" width="16" height="7" rx="1.5" fill="currentColor"/><path d="M24 4.5h2v4h-2z" fill="currentColor"/></svg>
+            </div>
+          </div>
+
+          <div class="nav-bar">
+            <div class="avatar unknown">S</div>
+            <div class="nav-info">
+              <strong>Scammer</strong>
+              <small>+94 77 ••• ••••</small>
+            </div>
+          </div>
+
+          <div id="senderChat" class="chat-area sender-area"></div>
+
+          <form id="sendForm" class="composer">
+            <div class="composer-field">
+              <input id="senderInput" type="text" placeholder="iMessage" autocomplete="off" />
+              <button type="submit" id="sendBtn" aria-label="Send">
+                <svg viewBox="0 0 24 24"><path d="M3.4 20.4l17.45-7.19a1 1 0 0 0 0-1.84L3.4 4.6a1.1 1.1 0 0 0-1.43 1.15l1.46 5.42a.5.5 0 0 0 .48.37H11v2H4.91a.5.5 0 0 0-.48.37l-1.46 5.42A1.1 1.1 0 0 0 3.4 20.4z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </form>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+
+      <div class="flow-indicator" aria-hidden="true">
+        <div class="flow-line"></div>
+        <code class="flow-pill">POST /v1/analyze</code>
+        <div class="flow-line"></div>
+      </div>
+
+      <div class="iphone">
+        <div class="iphone-frame">
+          <div class="dynamic-island"></div>
+          <div class="status-bar">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+              <svg viewBox="0 0 18 12" class="status-icon"><path d="M1 9h2v3H1zm4-3h2v6H5zm4-3h2v9H9zm4-4h2v13h-2z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 16 12" class="status-icon"><path d="M8 2C5.2 2 2.7 3.1 1 5l1.4 1C3.8 4.6 5.8 3.7 8 3.7s4.2.9 5.6 2.3L15 5C13.3 3.1 10.8 2 8 2zm0 4c-1.5 0-2.8.6-3.8 1.6L5.6 9c.7-.7 1.7-1.1 2.4-1.1s1.7.4 2.4 1.1l1.4-1.4C10.8 6.6 9.5 6 8 6zm0 3.5c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 28 13" class="status-icon battery"><rect x="1" y="1" width="22" height="11" rx="3" stroke="currentColor" fill="none" stroke-width="1.2"/><rect x="3" y="3" width="16" height="7" rx="1.5" fill="currentColor"/><path d="M24 4.5h2v4h-2z" fill="currentColor"/></svg>
+            </div>
+          </div>
+
+          <div class="nav-bar">
+            <svg class="chevron" viewBox="0 0 24 24"><path d="M14.5 5L8 12l6.5 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <div class="avatar user">Y</div>
+            <div class="nav-info">
+              <strong>Your device</strong>
+              <small class="active-badge">ScamShield activated</small>
+            </div>
+          </div>
+
+          <div id="recipientChat" class="chat-area">
+            <p class="chat-empty">No messages yet</p>
+          </div>
+
+          <div class="composer composer-disabled">
+            <div class="composer-field">
+              <input type="text" placeholder="iMessage" disabled />
+              <button type="button" disabled aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3.4 20.4l17.45-7.19a1 1 0 0 0 0-1.84L3.4 4.6a1.1 1.1 0 0 0-1.43 1.15l1.46 5.42a.5.5 0 0 0 .48.37H11v2H4.91a.5.5 0 0 0-.48.37l-1.46 5.42A1.1 1.1 0 0 0 3.4 20.4z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

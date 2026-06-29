@@ -1,0 +1,8 @@
+timestamp,message,predicted_action,predicted_verdict,user_rating,correct_label,source
+2026-06-29T06:30:28.687683+00:00,call me,allow,Likely Safe,correct,,demo-client
+2026-06-29T06:32:15.163746+00:00,Message ↓ Click Predict ↓ Probability: 82.31% Features... Attention weights...,allow,Likely Safe,correct,,demo-client
+2026-06-29T06:32:28.601969+00:00,"Hi,  We're reaching out because we noticed an unusual sign-in attempt on your account from a device that hasn't been used before. As a precaution, some account features have been temporarily limited.  If this was you, you can restore normal access by confirming your recent activity using the secure verification page below:  https://account-review-center.example  Please complete the verification within the next 12 hours to avoid further restrictions.  If you believe you received this message in error, no further action is required.  Thank you, Account Security Team",block,Scam / High Suspicion,correct,,demo-client
+2026-06-29T06:32:50.495910+00:00,URGENT: Your Sampath bank account is suspended. Verify now: http://secure-bank-login.xyz/verify,block,Scam / High Suspicion,correct,,demo-client
+2026-06-29T06:33:01.478397+00:00,https://excalidraw.com/,allow,Likely Safe,correct,,demo-client
+2026-06-29T06:35:54.220890+00:00,"Hello harshadefernando@gmail.com,  We permanently deleted your Heroku account due to outstanding invoices.  Thank you, The Heroku Billing Team",allow,Likely Safe,correct,,demo-client
+2026-06-29T06:38:48.464700+00:00,"We are hiring! Work from home, Rs. 5000/day. No experience. Reply YES now.",block,Scam / High Suspicion,correct,,demo-client

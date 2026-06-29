@@ -2,7 +2,7 @@ import pandas as pd
 import joblib
 import os
 
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score, train_test_split, StratifiedKFold
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -25,23 +25,18 @@ def load_and_merge_datasets():
         datasets.append(main_df)
         print(f"Loaded main dataset: {MAIN_DATA_PATH}")
         print(f"Main dataset rows: {len(main_df)}")
-    else:
-        print(f"Main dataset not found: {MAIN_DATA_PATH}")
 
     if os.path.exists(LOCAL_DATA_PATH):
         local_df = pd.read_csv(LOCAL_DATA_PATH)
         datasets.append(local_df)
         print(f"Loaded local dataset: {LOCAL_DATA_PATH}")
         print(f"Local dataset rows: {len(local_df)}")
-    else:
-        print(f"Local dataset not found: {LOCAL_DATA_PATH}")
 
     if not datasets:
         raise FileNotFoundError("No dataset files found in the data folder.")
 
     df = pd.concat(datasets, ignore_index=True)
 
-    # Keep only required columns
     required_columns = ["message", "label"]
 
     for col in required_columns:
@@ -50,12 +45,14 @@ def load_and_merge_datasets():
 
     df = df.dropna(subset=["message", "label"])
 
-    df["message"] = df["message"].astype(str)
+    df["message"] = df["message"].astype(str).str.strip()
     df["label"] = df["label"].astype(str).str.lower().str.strip()
 
-    # Keep only valid labels
     valid_labels = ["safe", "suspicious", "scam"]
     df = df[df["label"].isin(valid_labels)]
+
+    # Prefer the latest label when the exact same message appears more than once.
+    df = df.drop_duplicates(subset=["message"], keep="last")
 
     print("\nFinal merged dataset rows:", len(df))
     print("\nLabel distribution:")
@@ -64,11 +61,34 @@ def load_and_merge_datasets():
     return df
 
 
+def build_model():
+    return Pipeline([
+        ("tfidf", TfidfVectorizer(
+            lowercase=True,
+            ngram_range=(1, 2),
+            min_df=1,
+            sublinear_tf=True,
+        )),
+        ("classifier", LogisticRegression(
+            max_iter=2000,
+            class_weight="balanced",
+            C=0.8,
+        ))
+    ])
+
+
 def train_model():
     df = load_and_merge_datasets()
 
     X = df["message"]
     y = df["label"]
+
+    model = build_model()
+
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    cv_scores = cross_val_score(model, X, y, cv=cv, scoring="f1_macro")
+    print("\n5-fold cross-validation F1 (macro):", round(cv_scores.mean(), 3))
+    print("Fold scores:", [round(score, 3) for score in cv_scores])
 
     X_train, X_test, y_train, y_test = train_test_split(
         X,
@@ -78,27 +98,13 @@ def train_model():
         stratify=y
     )
 
-    model = Pipeline([
-        ("tfidf", TfidfVectorizer(
-            lowercase=True,
-            ngram_range=(1, 2),
-            min_df=1
-        )),
-        ("classifier", LogisticRegression(
-            max_iter=1000,
-            class_weight="balanced"
-        ))
-    ])
-
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
 
-    print("\nAccuracy:", accuracy_score(y_test, y_pred))
-
+    print("\nHold-out accuracy:", accuracy_score(y_test, y_pred))
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred))
-
     print("\nConfusion Matrix:")
     print(confusion_matrix(y_test, y_pred))
 

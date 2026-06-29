@@ -1,8 +1,27 @@
+import re
+
+
+def contains_phrase(message_lower, phrase):
+    """
+    Match whole words/phrases to avoid false positives such as
+    'rs' matching inside a username or domain name.
+    """
+    phrase = phrase.lower().strip()
+
+    if phrase == "rs." or phrase == "rs":
+        return bool(re.search(r"\brs\.?\b", message_lower))
+
+    if " " in phrase or len(phrase) > 4:
+        return phrase in message_lower
+
+    return bool(re.search(rf"(?:^|\W){re.escape(phrase)}(?:\W|$)", message_lower))
+
+
 def contains_any(message_lower, keyword_list):
     """
     Checks whether any keyword or phrase exists in the message.
     """
-    return any(keyword.lower() in message_lower for keyword in keyword_list)
+    return any(contains_phrase(message_lower, keyword) for keyword in keyword_list)
 
 
 def generate_explanation(message):
@@ -32,10 +51,11 @@ def generate_explanation(message):
     ]
 
     link_words = [
-        "link", "click", "verify", "login", "claim", "refund",
-        "reactivate", "re-activate", "release", "update details",
-        "update your details", "update your information",
-        "http", "https", "www", "[url]"
+        "click here", "click this", "click the", "tap here", "open this link",
+        "verify your", "login here", "claim now", "refund now",
+        "reactivate", "re-activate", "release now",
+        "update details", "update your details", "update your information",
+        "[url]"
     ]
 
     job_scam_words = [
@@ -148,10 +168,9 @@ def generate_explanation(message):
     ]
 
     cold_contact_words = [
-        "hello", "hii", "hi", "hey", "good afternoon", "good morning",
-        "can i talk", "may i talk", "are you here", "are you there",
-        "excuse me", "nice to meet you", "hello..", "hello !!",
-        "he!!o", "h.ello", "h.e.l.l.o", "are-you-there"
+        "hello..", "hello !!", "he!!o", "h.ello", "h.e.l.l.o",
+        "are you there", "are-you-there", "can i talk", "may i talk",
+        "excuse me", "nice to meet you", "unknown account greeting",
     ]
 
     if contains_any(message_lower, urgency_words):
